@@ -1,0 +1,49 @@
+:root {
+    /*  Fonts */
+   --main-font: 'Roboto', sans-serif;
+   --secondary-font: 'Raleway', sans-serif;
+   
+     /* Text colors */
+     --main-txt-cl: #212121;
+     --light-txt-cl: #ffffff;
+     --light-txt-cl-60: rgba(250, 250, 250, 0.6);
+     --light-txt-cl-30: rgba(255, 255, 255, 0.3);
+     --accent-txt-cl: #2196F3;
+     --grey-txt-cl: #757575;
+     --black-txt-cl: #000000;
+     --grey-button-txt-cl: #F5F4FA;
+     --shadow-txt-cl: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+   
+     /* Background colors */
+   
+     --main-light-bg-cl: #ffffff;
+     --hero-bg-gradient: rgba(47, 48, 58, 0.4);
+     --grey-bg-cl-20: rgba(0, 0, 0, 0.2);
+     --light-grey-bg-cl: #D9D9D9;
+     --grey-bg-cl: #2F303A;
+     --grey-team-bg-cl: #F5F4FA;
+     --light-icon-bg-cl: #EEEEEE;
+     --accent-bg-cl: #2196F3;
+     --shadow-btn-bg-cl: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     --btn-bg-cl: #188CE8;
+     --box-shadow: rgba(0, 0, 0, 0.15);
+     --active-btn-bg-cl: #188CE8;
+     --btn-shadow: rgba(0, 0, 0, 0.25);
+     --footer-icons-bg-cl: rgba(250, 250, 250, 0.1);
+     --activ-bg-cl: rgba(47, 48, 58, 0.8);
+     --project-overflov-bg-cl: rgba(33, 150, 243, 0.9);
+   
+     /* Others */
+     --line-cl: #ECECEC;
+     --social-icons-cl: #AFB1B8;
+     --shadow-15: rgba(0, 0, 0, 0.15);
+   
+     --border-modal-btn-01: rgba(0, 0, 0, 0.1);
+     --border-register-input: rgba(33, 33, 33, 0.2);
+     --textarea-modal-cl:  rgba(117, 117, 117, 0.5);
+   
+     --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px  rgba(0, 0, 0, 0.2);
+   
+
+   }

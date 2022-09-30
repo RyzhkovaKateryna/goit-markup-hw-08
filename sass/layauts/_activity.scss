@@ -1,0 +1,27 @@
+.activity__list {
+  @include list(null, 30px, null, null)
+}
+
+.activity__thumb {
+  position: relative;
+}
+.activity__article {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  background-color: var(--activ-bg-cl);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+  @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
+}  
+
+.activity__section {
+  @include section(null, 94px, null);
+}

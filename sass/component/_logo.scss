@@ -1,0 +1,10 @@
+.logo {
+    @include font(var(--secondary-font), 26px, 700, calc(31/26), 0.03em, var(--accent-txt-cl));
+}
+.logo__black {
+    color: var(--black-txt-cl);
+    font-weight: 700;
+}
+.logo__light {
+    color: var(--light-txt-cl);
+}
