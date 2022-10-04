@@ -1,0 +1,16 @@
+.container {
+    max-width: 450px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: block;
+  
+    // desktop styles
+    @media screen and (min-width: 768px) {
+      max-width: 738px;
+    }
+  
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
