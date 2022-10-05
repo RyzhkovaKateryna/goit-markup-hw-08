@@ -9,16 +9,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background: var(--grey-team-bg-cl);
     border-radius: 4px;
     margin-bottom: 30px;
 
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
 }
 .features__section {
-    @include section(94px, 94px, var(--main-light-bg-cl));
+    @include section(60px, 60px, null); 
+
+
+    @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);  
+    }
+
 }
 .features__list {
-    @include list(null, 30px, null, null)
+    @include list(null, 30px, column, null);
+    width: 450px;
+
+   
+    @media screen and (min-width: 768px) {
+    @include list(null, 30px, row, wrap);
+    width: 354px;
+    }
+
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+    @include list(null, 30px, null, nowrap);
+    width: 270px;
+      }
+
 }

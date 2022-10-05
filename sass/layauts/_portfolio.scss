@@ -29,7 +29,7 @@
     border-top: 0;
 }
 .portfolio__section {
-    @include section(94px, 94px, var(--main-light-bg-cl));
+    @include section(94px, 94px, null);
 }
 
 .portfolio__link:focus,

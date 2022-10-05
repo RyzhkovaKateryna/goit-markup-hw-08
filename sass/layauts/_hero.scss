@@ -4,42 +4,42 @@
     @include font(var(--main-font), 44px, 900, calc(60/44), 0.06em, var(--light-txt-cl));
     margin-bottom: 35px;
 }
-// .main__section {
-//     text-align: center;
-//     @include section(200px, 200px, var(--grey-bg-cl));
-//     text-align: center;
-//     max-width: 1600px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/bg-images/bg-img.jpg);
+.main__section {
+    text-align: center;
+    @include section(200px, 200px, var(--grey-bg-cl));
+    text-align: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/bg-images/bg-img.jpg);
 
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-// .main__container {
-//     width: 700px;
-// }
-// .btn {
-//     align-items: center;
-//     text-align: center;
-//     @include font(inherit, 16px, 700, calc(30/16), 0.06em, var(--light-txt-cl));
-//     background: var(--accent-bg-cl);
-//     border: none;
-//     cursor: pointer;
-//     border-radius: 4px;  
-//     width: 216px;
-//     height: 50px;
-//     @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+.main__container {
+    width: 700px;
+}
+.btn {
+    align-items: center;
+    text-align: center;
+    @include font(inherit, 16px, 700, calc(30/16), 0.06em, var(--light-txt-cl));
+    background: var(--accent-bg-cl);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;  
+    width: 216px;
+    height: 50px;
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-// }
-// .btn:hover,
-// .btn:focus,
-// .btn__current {
-//     color: var(--light-txt-cl);
-//     background-color: var(--accent-bg-cl);
-//     box-shadow: var(--shadow-btn-bg-cl);
-//     filter: drop-shadow(0px 4px 4px var(--btn-shadow));
-//     border: 1px solid var(--active-btn-bg-cl);
-// }
+}
+.btn:hover,
+.btn:focus,
+.btn__current {
+    color: var(--light-txt-cl);
+    background-color: var(--accent-bg-cl);
+    box-shadow: var(--shadow-btn-bg-cl);
+    filter: drop-shadow(0px 4px 4px var(--btn-shadow));
+    border: 1px solid var(--active-btn-bg-cl);
+}
