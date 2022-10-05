@@ -4,6 +4,16 @@
 }
 .features__content {
     @include font(var(--main-font), 14px, null, calc(24/14), 0.03em, null);
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    }
 }
 .features__icon {
     display: flex;
@@ -41,13 +51,13 @@
    
     @media screen and (min-width: 768px) {
     @include list(null, 30px, row, wrap);
-    width: 354px;
+    width: 738px;
     }
 
     // desktop styles
     @media screen and (min-width: 1200px) {
     @include list(null, 30px, null, nowrap);
-    width: 270px;
-      }
+    width: 1170px;
+    }
 
 }

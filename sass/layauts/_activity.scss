@@ -1,3 +1,13 @@
+.activity__section {
+  @media (max-width: 1199px) {
+    display: none;
+    
+  }
+}
+.activity__section {
+  @include section(null, 94px, null);
+}
+
 .activity__list {
   @include list(null, 30px, null, null)
 }
@@ -22,6 +32,3 @@
   @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
 }  
 
-.activity__section {
-  @include section(null, 94px, null);
-}

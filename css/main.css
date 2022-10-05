@@ -1010,6 +1010,17 @@ summary {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .features__content {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__content {
+    width: 270px;
+  }
 }
 
 .features__icon {
@@ -1067,7 +1078,7 @@ summary {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 354px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1075,8 +1086,18 @@ summary {
     gap: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 270px;
+    width: 1170px;
   }
+}
+
+@media (max-width: 1199px) {
+  .activity__section {
+    display: none;
+  }
+}
+
+.activity__section {
+  padding-bottom: 94px;
 }
 
 .activity__list {
@@ -1113,10 +1134,6 @@ summary {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
-}
-
-.activity__section {
-  padding-bottom: 94px;
 }
 
 .team {
@@ -1161,9 +1178,14 @@ summary {
 }
 
 .client__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--main-light-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .client__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__list {
@@ -1174,6 +1196,33 @@ summary {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .client__list {
+    gap: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__list {
+    gap: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 1170px;
+  }
 }
 
 .client__link {
@@ -1186,7 +1235,7 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: var(--social-icons-cl);
   background-color: var(--light-txt-cl);
@@ -1203,6 +1252,16 @@ summary {
 .client__link:hover, .client__link:focus {
   color: var(--accent-txt-cl);
   border-color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 210px;
+  }
 }
 
 .button {

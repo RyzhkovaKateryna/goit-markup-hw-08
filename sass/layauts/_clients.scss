@@ -1,9 +1,27 @@
 .client__section {
-    @include section(94px, 94px, var(--main-light-bg-cl));
+    @include section(60px, 60px, null);
+
+    @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);
+    }
+
 }  
 .client__list {
     justify-content: center;
-    @include list(flex, 30px, null, null);
+    @include list(flex, 30px, row, wrap);
+    width: 450px;
+
+   
+    @media screen and (min-width: 768px) {
+    @include list(null, 30px, row, wrap);
+    width: 738px;
+    }
+
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+    @include list(null, 30px, null, nowrap);
+    width: 1170px;
+      }
 }
   
 .client__link {
@@ -11,7 +29,7 @@
     align-items: center;
     justify-content: center;
   
-    width: 170px;
+    width: 210px;
     height: 92px;
   
     color: var(--social-icons-cl);
@@ -24,4 +42,14 @@
          &:focus {
              color: var(--accent-txt-cl);
              border-color: var(--accent-txt-cl);}
+
+
+    @media screen and (min-width: 768px) {
+    width: 226px;
+    }
+            
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+    width: 210px;
+    }         
 }
