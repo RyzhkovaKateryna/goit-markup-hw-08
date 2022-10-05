@@ -16,20 +16,49 @@
 .portfolio__btn {
     display: flex;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-.portfolio__list {
-    @include list(flex, 30px, null, wrap);
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+
+@media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
 }
+                
+    // desktop styles
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;    
+} }
+
+
+.portfolio__list {
+@include list(flex, 30px, column, null);
+
+
+@media screen and (min-width: 768px) {
+    @include list(flex, 30px, row, wrap);
+}
+                
+    // desktop styles
+@media screen and (min-width: 1200px) {
+    @include list(flex, 30px, null, null);
+}
+}
+
+
 .portfolio__holder{
     padding: 20px 24px;
     border: 1px solid var(--light-icon-bg-cl);
     border-top: 0;
 }
+
 .portfolio__section {
-    @include section(94px, 94px, null);
+    @include section(60px, 60px, null);
+
+    @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);}
 }
 
 .portfolio__link:focus,
@@ -58,3 +87,4 @@
     @include font(var(--main-font), 18px, null, calc(28/16), 0.03em, var(--light-txt-cl));
 
 }
+
