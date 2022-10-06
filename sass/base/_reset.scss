@@ -35,8 +35,6 @@
     fill: currentColor;
 }
 
-
-
 .subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -44,17 +42,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
+
 }
 
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
-    margin-bottom: 50px;
-}
+
+
 img {
     display: block;
     max-width: 100%;
