@@ -1,9 +1,4 @@
 
-.menu__list {
-@media (max-width: 767.5px) {
-        display: none;
-      }
-}
 .header__link {
     @include font(var(--main-font), 14px, 500, calc(16/14), 0.02em, var(--grey-txt-cl));
     @include transition(color,null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
@@ -66,31 +61,3 @@
     border-radius: 2px;
 
 }
-// .menu__button {
-//     display: inline-flex;
-//     margin: 0;
-//     padding: 0;
-//     border: none;
-//     background-color: transparent;
-// }
-// .menu__button .menu__close {
-//     display: none;
-// }
-// .menu__button.is__open .menu__close {
-//     display: block;
-// }
-// .menu__button.is__open .menu__open {
-//     display: none;
-// }
-// .menu__container {
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-//     background-color:red;
-//     padding: 20px;
-//     text-align: center;
-//     font-size: 40px;
-
-
-// }

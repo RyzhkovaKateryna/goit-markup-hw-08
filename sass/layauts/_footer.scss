@@ -42,6 +42,16 @@
 }
 
 .footer__box{
+    display: block;
+
+
+    @media screen and (min-width: 768px) {
+    }
+            
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+
+    } 
     display: flex;
     gap: 70px;
     justify-content: flex-start;
