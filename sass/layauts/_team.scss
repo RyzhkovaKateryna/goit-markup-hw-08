@@ -21,7 +21,6 @@
 }
 
 .team__list {
-    // gap: 30px;
 
     justify-content: center;
     @include list(flex, 30px, row, wrap);

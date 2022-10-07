@@ -8,13 +8,8 @@
   @include section(null, 94px, null);
 }
 .title {
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: calc(42/36);
   text-align: center;
   @include font(null, 28px, 700, alc(33/28), 0.03em, var(--main-txt-cl));
-  // letter-spacing: 0.03em;
-  // color: var(--main-txt-cl);
   margin-bottom: 50px;
 
   // desktop styles
