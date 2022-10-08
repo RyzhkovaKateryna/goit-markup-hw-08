@@ -1,7 +1,5 @@
 .footer__link {
-
     font-style: normal;
-
     @include font(var(--main-font), 14px, 400, calc(24/14), 0.03em, var(--light-txt-cl-60)); 
     @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1)); 
 }
@@ -19,15 +17,17 @@
 }
 .footer__content {
     text-transform: uppercase;
-
     @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
     margin-bottom: 20px;
 }
 
 .footer {
-    @include section(94px, 94px, var(--grey-bg-cl));
+    @include section(60px, 60px, var(--grey-bg-cl));
     
-}
+    @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, var(--grey-bg-cl));}
+    }
+    
 
 .footer__item:not(last-child) {
     margin-bottom: 8px;
@@ -81,7 +81,6 @@
     background-color: var(--footer-icons-bg-cl);
     border-radius: 50%;
     @include transition(null, background-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-
   }
 .footer__socials:hover,
 .footer__socials:focus {
@@ -90,82 +89,4 @@
 }
   
 
-.footer__mail {
-    margin-left: auto;
-}
-.footer__form {
-    display: block;
-    color: var(--light-txt-cl-60);
-   
-    
-    @media screen and (min-width: 768px) {
-    }
-            
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    } 
 
-
-
-}
-
-.footer__title {
-    display: block;
-    text-transform: uppercase;
-
-    @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
-    margin-bottom: 20px;
-
-}
-.footer__form input::placeholder {
-    display: flex;
-    align-items: center;
-    @include font(var(--main-font), 16px, 400, calc(20/16), 0.03em, var(--light-txt-cl-60));
-
-}
-
-.footer__input {
-    width: 100%;
-    border: 1px solid var(--light-txt-cl-30);
-    filter: drop-shadow(0px 4px 4px var(--shadow-15));
-    border-radius: 4px;
-    padding: 15px 16px;
-    color: var(--light-txt-cl-60);
-    @include transition(color, border-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-    cursor: pointer;
-    outline: transparent;
-    background-color: var(--grey-bg-cl);
-    
-    
-    @media screen and (min-width: 768px) {
-        width: 450px;
-    }
-            
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-    } 
-
-}
-
-.footer__input:hover,
-.footer__input:focus {
-    border-color: var(--accent-bg-cl);
-    color: var(--light-txt-cl-60);
-}
-.footer__label {
-    margin-right: 12px;
-    margin-bottom: 20px;
-
-}
-
-
-.btn__mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}

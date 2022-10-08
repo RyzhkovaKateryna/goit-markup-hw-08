@@ -3,7 +3,9 @@
 }
 .footer__form {
     display: block;
-
+    color: var(--light-txt-cl-60);
+   
+    
     @media screen and (min-width: 768px) {
     }
             
@@ -15,26 +17,26 @@
     } 
 
 
+
 }
 
 .footer__title {
     display: block;
     text-transform: uppercase;
+
     @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
     margin-bottom: 20px;
 
 }
 .footer__form input::placeholder {
-
     display: flex;
     align-items: center;
-
     @include font(var(--main-font), 16px, 400, calc(20/16), 0.03em, var(--light-txt-cl-60));
 
 }
 
 .footer__input {
-    width: 358px;
+    width: 100%;
     border: 1px solid var(--light-txt-cl-30);
     filter: drop-shadow(0px 4px 4px var(--shadow-15));
     border-radius: 4px;
@@ -44,6 +46,16 @@
     cursor: pointer;
     outline: transparent;
     background-color: var(--grey-bg-cl);
+    
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+            
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    } 
 
 }
 
@@ -53,7 +65,12 @@
     color: var(--light-txt-cl-60);
 }
 .footer__label {
+
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: 1200px) {
     margin-right: 12px;
+    } 
 }
 
 
@@ -62,4 +79,5 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+margin: 0 auto;
 }
