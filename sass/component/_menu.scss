@@ -17,3 +17,97 @@
     display: none;
 }
 }
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px 48px;
+  
+    background-color: var(--light-txt-cl);
+  
+    transform: translateX(100%);
+    transition: transform 250ms;
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+.link {
+    text-decoration: none;
+}
+.mobile-menu {
+    margin-bottom: auto;
+}
+  
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    fill: var(--black-txt-cl);
+    background-color: transparent;
+    border: none;
+    @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    cursor: pointer;  
+   
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+    fill: var(--accent-txt-cl);
+}
+  
+
+.menu-pages {
+    @include font(var(--main-font), 40px, 500, calc(47/40), 0.02em, var(--black-txt-cl));
+    @include transition(color, border, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    cursor: pointer;
+    border-bottom: 4px solid var(--light-txt-cl);
+}
+.menu-pages:hover,
+.menu-pages:focus {
+    color: var(--accent-txt-cl);
+    border: var(--accent-txt-cl)
+
+}
+.menu-tel{
+    @include font(var(--main-font), 34px, 500, calc(40/34), 0.02em, var(--accent-txt-cl));
+
+}
+.menu-email{
+    @include font(var(--main-font), 24px, 500, calc(28/24), 0.02em, var(--grey-txt-cl));
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    cursor: pointer;
+}
+.menu-email:hover,
+.menu-email:focus {
+    color: var(--accent-txt-cl);
+}
+.mobile-item {
+    margin-bottom: 32px;
+}
+.menu-contact {
+    margin-bottom: 64px;
+}
+.mobile-socials {
+    display: flex;
+    margin-bottom: 48px;
+    gap: 10px;
+}
+.menu-socials {
+    @include font(var(--main-font), 18px, 500, calc(22/18), 0.02em, var(--accent-txt-cl));
+    padding-right: 10px;
+    border-right: 1px solid var(--border-register-input);
+}
+
