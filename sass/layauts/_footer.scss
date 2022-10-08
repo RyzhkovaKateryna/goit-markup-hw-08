@@ -128,7 +128,7 @@
 }
 
 .footer__input {
-    width: 358px;
+    width: 100%;
     border: 1px solid var(--light-txt-cl-30);
     filter: drop-shadow(0px 4px 4px var(--shadow-15));
     border-radius: 4px;
@@ -138,6 +138,16 @@
     cursor: pointer;
     outline: transparent;
     background-color: var(--grey-bg-cl);
+    
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+            
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    } 
 
 }
 
@@ -148,6 +158,7 @@
 }
 .footer__label {
     margin-right: 12px;
+    margin-bottom: 20px;
 
 }
 
