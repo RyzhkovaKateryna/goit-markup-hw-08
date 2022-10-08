@@ -2,9 +2,18 @@
     margin-left: auto;
 }
 .footer__form {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+    }
+            
+    // desktop styles
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    } 
+
 
 }
 
