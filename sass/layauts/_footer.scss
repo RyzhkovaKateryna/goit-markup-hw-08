@@ -26,6 +26,7 @@
 
 .footer {
     @include section(94px, 94px, var(--grey-bg-cl));
+    
 }
 .footer__contacts {
     margin-top: 20px;
