@@ -35,7 +35,7 @@
 
 .portfolio__list {
 @include list(flex, 30px, column, null);
-
+        flex-grow: 1;
 
 @media screen and (min-width: 768px) {
     @include list(flex, 30px, row, wrap);
@@ -46,12 +46,20 @@
     @include list(flex, 30px, null, null);
 }
 }
+.portfolio__item {
 
+    @media screen and (min-width:768px) and (max-width:1200){
+        display: flex;
+        flex-basis: calc((100% - 30px) / 2);
+
+    }
+}
 
 .portfolio__holder{
     padding: 20px 24px;
     border: 1px solid var(--light-icon-bg-cl);
     border-top: 0;
+    flex-grow: 1;
 }
 
 .portfolio__section {
