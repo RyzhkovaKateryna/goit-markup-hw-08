@@ -1,14 +1,13 @@
 .registration__title {
-    display: block;
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23/20);
     text-align: center;
-    letter-spacing: 0.03em;
+    @include font(var(--main-font), 20px, 700, calc(30/20), 0.03em, var(--main-txt-cl));
+    display: block;
     margin-bottom: 12px;
     
-    color: var(--main-txt-cl);}
+    @media screen and (min-width: 1200px) {
+    @include font(var(--main-font), 20px, 700, calc(23/20), 0.03em, var(--main-txt-cl));
+    }}
+
 
 .registration__group {
    margin-bottom: 20px;

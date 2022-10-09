@@ -107,10 +107,12 @@
 }
 .menu-socials {
     @include font(var(--main-font), 18px, 500, calc(22/18), 0.02em, var(--accent-txt-cl));
-    padding-right: 10px;
-    border-right: 1px solid var(--border-register-input);
-}
 
-// .menu-socials:last-child {
-//     border-right: transparent;
-// }
+}
+.mobile__socials {
+    padding-right: 10px;
+    border-right: 1px solid var(--border-register-input);    
+}
+.mobile__socials:last-child {
+    border-right: none;
+}

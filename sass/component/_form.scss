@@ -2,7 +2,6 @@
     margin-left: auto;
 }
 .footer__form {
-    display: block;
     color: var(--light-txt-cl-60);
    
     
@@ -13,7 +12,7 @@
     @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: baseline;
     } 
 
 
@@ -66,10 +65,10 @@
 }
 .footer__label {
 
-    margin-bottom: 20px;
-    
+margin-bottom: 20px;
     @media screen and (min-width: 1200px) {
     margin-right: 12px;
+    margin-bottom: 0;
     } 
 }
 
@@ -80,4 +79,11 @@
     align-items: center;
     gap: 10px;
 margin: 0 auto;
+margin-top: 20px;
+
+
+@media screen and (min-width: 1200px) {
+    margin-top: 0;
+    
+}
 }
