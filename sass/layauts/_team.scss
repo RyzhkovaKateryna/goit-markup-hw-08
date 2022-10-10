@@ -21,15 +21,15 @@
 }
 
 .team__list {
-
+    display: block;
     justify-content: center;
-    @include list(flex, 30px, row, wrap);
     width: 450px;
 
    
     @media screen and (min-width: 768px) {
-    @include list(null, 30px, row, wrap);
+    @include list(flex, 30px, row, wrap);
     width: 738px;
+
     }
 
     // desktop styles
@@ -44,7 +44,21 @@
     box-shadow: var(--card-shadow);
     border-radius: 0px 0px 4px 4px; 
     background-color: var(--main-light-bg-cl);
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;}
+
+    @media screen and (min-width:768px) and (max-width:1200px){
+        display: block;
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
+
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }    
 }
 .team__info {
     padding: 30px 32px;
+    flex-grow: 1;
 }
