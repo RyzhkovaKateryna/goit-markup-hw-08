@@ -24,28 +24,28 @@
       {
         "scope": ["entity.other.attribute-name.html"],
         "settings": {
-          "foreground": "#ee00ff"
+          "foreground": "#048d04"
         }
       },
       // colour of class names
       {
         "scope": ["string.quoted.double.html", "entity.other.attribute-name.class.css"],
         "settings": {
-          "foreground": "#12e323"
+          "foreground": "#e39a08"
         }
       },
       // colour of start quotes
       {
         "scope": ["punctuation.definition.string.begin.html"],
         "settings": {
-          "foreground": "#ff0000"
+          "foreground": "#0089d3"
         }
       },
       // colour of end quotes
       {
         "scope": ["punctuation.definition.string.end.html"],
         "settings": {
-          "foreground": "#5e1414"
+          "foreground": "#076864"
         }
       }
     ]
