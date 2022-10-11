@@ -1953,7 +1953,7 @@ summary {
 }
 
 .footer__item {
-  text-align: left;
+  text-align: center;
 }
 .footer__item:not(last-child) {
   margin-bottom: 8px;
@@ -1961,6 +1961,11 @@ summary {
 @media screen and (min-width: 768px) {
   .footer__item {
     margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    text-align: left;
   }
 }
 
