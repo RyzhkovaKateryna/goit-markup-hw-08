@@ -396,6 +396,13 @@ summary {
 .logo__footer {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .logo__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .team__icons {
   display: -webkit-box;
@@ -538,6 +545,12 @@ summary {
 .footer__form {
   color: var(--light-txt-cl-60);
 }
+@media screen and (min-width: 768px) {
+  .footer__form {
+    display: block;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__form {
     display: -webkit-box;
@@ -555,6 +568,7 @@ summary {
 .footer__title {
   display: block;
   text-transform: uppercase;
+  text-align: center;
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
@@ -562,6 +576,11 @@ summary {
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
 }
 
 .footer__form input::-webkit-input-placeholder {
@@ -1914,6 +1933,11 @@ summary {
   color: var(--light-txt-cl);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    text-align: left;
+  }
+}
 
 .footer {
   padding-top: 60px;
@@ -1928,11 +1952,14 @@ summary {
   }
 }
 
+.footer__item {
+  text-align: left;
+}
 .footer__item:not(last-child) {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
-  .footer__item:not(last-child) {
+  .footer__item {
     margin-bottom: 9px;
   }
 }
@@ -2025,5 +2052,10 @@ summary {
 @media screen and (min-width: 768px) {
   .footer__contacts {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */

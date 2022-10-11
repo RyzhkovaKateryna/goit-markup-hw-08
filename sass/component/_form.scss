@@ -8,6 +8,8 @@ text-align: left;
    
     
     @media screen and (min-width: 768px) {
+        display: block;
+        text-align: center;
     }
             
     // desktop styles
@@ -24,9 +26,15 @@ text-align: left;
 .footer__title {
     display: block;
     text-transform: uppercase;
+    text-align: center;
 
     @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
     margin-bottom: 20px;
+
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 
 }
 .footer__form input::placeholder {

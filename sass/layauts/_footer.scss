@@ -23,6 +23,11 @@
     text-transform: uppercase;
     @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
     margin-bottom: 20px;
+
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer {
@@ -33,8 +38,10 @@
     }
     
 
-.footer__item:not(last-child) {
-    margin-bottom: 8px;
+.footer__item {
+    text-align: left;
+&:not(last-child) {
+    margin-bottom: 8px;}
     
     @media screen and (min-width:768px) {
     margin-bottom: 9px;        
@@ -101,6 +108,9 @@
 
     @media screen and (min-width:768px) {
     margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+margin-top: 0;
     }
 }
 // .footer__adress {
