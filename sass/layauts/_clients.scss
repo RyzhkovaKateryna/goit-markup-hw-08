@@ -41,26 +41,16 @@
          &:hover,
          &:focus {
              color: var(--accent-txt-cl);
-             border-color: var(--accent-txt-cl);}
-
-
-    @media screen and (min-width: 768px) {
-    // width: 226px;
-    }
-            
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-    // width: 170px;
-    }         
+             border-color: var(--accent-txt-cl);}       
 }
 
 
 .client__item {
-    display: flex;
+    // display: flex;
     flex-basis: calc((100% - 30px) / 2);
 
     @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px*2) / 3);
+    flex-basis: calc((100% - 2*30px) / 3);
     }
 
 }
