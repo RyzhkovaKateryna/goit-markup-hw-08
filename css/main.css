@@ -393,6 +393,25 @@ summary {
   color: var(--light-txt-cl);
 }
 
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 .logo__footer {
   margin-bottom: 20px;
 }
@@ -836,7 +855,8 @@ summary {
   cursor: pointer;
 }
 
-.registration__input:hover + .registration__icon {
+.registration__input:hover + .registration__icon,
+.registration__input:focus + .registration__icon {
   fill: var(--accent-txt-cl);
 }
 
@@ -1104,7 +1124,6 @@ summary {
 
 .header__icons__link {
   padding-top: 21px;
-  margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
   .header__icons__link {
@@ -1164,25 +1183,6 @@ summary {
   border-bottom: 1px solid var(--line-cl);
 }
 
-.header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    margin-right: 87px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
 .header__list {
   display: block;
   margin-left: auto;
@@ -1222,6 +1222,19 @@ summary {
   }
 }
 
+.header__item {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__item {
+    margin-bottom: 0;
+  }
+}
+
+.header__item:last-child {
+  margin-bottom: 0;
+}
+
 .main__title {
   text-align: center;
   text-transform: uppercase;
@@ -1253,6 +1266,7 @@ summary {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1265,28 +1279,29 @@ summary {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md-@2x_result.webp);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .main__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_md-@1x_result.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md-@1x_result.webp);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_md-@2x_result.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md-@2x_result.webp);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .main__section {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--grey-bg-cl);
+    height: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img_dd-@1x_result.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img_dd-@1x_result.webp);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img_dd-@2x_result.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img_dd-@2x_result.webp);
@@ -1294,11 +1309,11 @@ summary {
 }
 
 .main__container {
-  width: 360px;
+  width: 400px;
 }
 @media screen and (min-width: 1200px) {
   .main__container {
-    width: 696px;
+    width: 700px;
   }
 }
 
@@ -1346,6 +1361,12 @@ summary {
 
 .features__subtitle {
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__subtitle {
+    text-align: left;
+  }
 }
 
 .features__content {
@@ -1353,17 +1374,6 @@ summary {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .features__content {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__content {
-    width: 270px;
-  }
 }
 
 .features__icon {
@@ -1376,21 +1386,10 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
   height: 120px;
   background: var(--grey-team-bg-cl);
   border-radius: 4px;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .features__icon {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__icon {
-    width: 270px;
-  }
 }
 
 .features__section {
@@ -1404,16 +1403,28 @@ summary {
   }
 }
 
+.features__item {
+  margin-bottom: 30px;
+}
+.features__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+
 .features__list {
-  gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 450px;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     gap: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1421,7 +1432,6 @@ summary {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1429,11 +1439,10 @@ summary {
     gap: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 1170px;
   }
 }
 
-@media (max-width: 767.9px) {
+@media (max-width: 1200px) {
   .activity__section {
     display: none;
   }
@@ -1450,7 +1459,7 @@ summary {
   line-height: alc(33/28);
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .title {
@@ -1459,6 +1468,7 @@ summary {
     line-height: alc(42/36);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-bottom: 50px;
   }
 }
 
@@ -1501,7 +1511,7 @@ summary {
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: --grey-team-bg-cl;
+  background-color: var(--grey-team-bg-cl);
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -1533,7 +1543,6 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1547,7 +1556,6 @@ summary {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1555,7 +1563,6 @@ summary {
     gap: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 1170px;
   }
 }
 
@@ -1587,9 +1594,6 @@ summary {
 
 .team__info {
   padding: 30px 32px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .client__section {
@@ -1617,7 +1621,6 @@ summary {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .client__list {
@@ -1628,7 +1631,6 @@ summary {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1636,7 +1638,6 @@ summary {
     gap: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 1170px;
   }
 }
 
@@ -1650,7 +1651,6 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   color: var(--social-icons-cl);
   background-color: var(--light-txt-cl);
@@ -1668,14 +1668,17 @@ summary {
   color: var(--accent-txt-cl);
   border-color: var(--accent-txt-cl);
 }
-@media screen and (min-width: 768px) {
-  .client__link {
-    width: 226px;
-  }
+.client__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
-@media screen and (min-width: 1200px) {
-  .client__link {
-    width: 170px;
+@media screen and (min-width: 768px) {
+  .client__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1924,6 +1927,7 @@ summary {
 }
 
 .footer__content {
+  margin: 0;
   text-transform: uppercase;
   font-family: var(--main-font);
   font-size: 14px;
@@ -1932,6 +1936,9 @@ summary {
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
   margin-bottom: 20px;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
 }
 @media screen and (min-width: 1200px) {
   .footer__content {
@@ -2011,7 +2018,6 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 70px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

@@ -1,39 +1,43 @@
-
 .features__subtitle {
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+    text-align: left;
+}
 }
 .features__content {
     @include font(var(--main-font), 14px, null, calc(24/14), 0.03em, null);
-    width: 450px;
+    // width: 450px;
 
-    @media screen and (min-width: 768px) {
-    width: 354px;
-    }
+    // @media screen and (min-width: 768px) {
+    // width: 354px;
+    // }
 
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-    width: 270px;
-    }
+    // // desktop styles
+    // @media screen and (min-width: 1200px) {
+    // width: 270px;
+    // }
 }
 .features__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    // width: 450px;
     height: 120px;
     background: var(--grey-team-bg-cl);
     border-radius: 4px;
     margin-bottom: 30px;
 
 
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     width: 354px;
+    // }
 
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-      }
+    // // desktop styles
+    // @media screen and (min-width: 1200px) {
+    //     width: 270px;
+    //   }
 }
 .features__section {
     @include section(60px, 60px, null); 
@@ -44,20 +48,36 @@
     }
 
 }
+
+.features__item {
+    margin-bottom: 30px;
+         &:last-child {
+            margin-bottom: 0;
+       }
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    // width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+}
+
+}
+
 .features__list {
-    @include list(null, 30px, column, null);
-    width: 450px;
+    @include list(block, null, null, null);
+    // width: 450px;
 
    
     @media screen and (min-width: 768px) {
-    @include list(null, 30px, row, wrap);
-    width: 738px;
+    @include list(flex, 30px, row, wrap);
+    // width: 738px;
     }
 
     // desktop styles
     @media screen and (min-width: 1200px) {
     @include list(null, 30px, null, nowrap);
-    width: 1170px;
+    // width: 1170px;
     }
 
 }
+

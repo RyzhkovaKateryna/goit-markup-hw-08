@@ -1,6 +1,6 @@
 .header__icons__link {
     padding-top: 21px;
-    margin-bottom: 10px;
+
 @media screen and (min-width: 1200px) {
     padding-top: 21px;
     margin-bottom: 0;
@@ -40,23 +40,7 @@
 
 }
 
-.header__logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
 
-    @media screen and (min-width: 768px) {
-        margin-right: 87px;
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
-
-    // desktop styles
-    @media screen and (min-width: 1200px) {
-    
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;}
-}
 
 .header__list{
 
@@ -94,3 +78,13 @@
         
       }
 }
+.header__item {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        }
+
+}
+.header__item:last-child {
+    margin-bottom: 0;}

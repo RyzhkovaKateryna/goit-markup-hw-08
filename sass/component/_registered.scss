@@ -57,7 +57,8 @@
 
 }
 
-.registration__input:hover + .registration__icon {
+.registration__input:hover + .registration__icon,
+.registration__input:focus + .registration__icon {
     fill: var(--accent-txt-cl);
 }
 .registration__textarea {

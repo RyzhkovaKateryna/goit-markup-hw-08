@@ -16,7 +16,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    
+    height: 400px;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
 }
 
 // Tablet screen
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/hero/img_md-@1x_result.webp);
 
@@ -42,8 +42,9 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
 }
 }   
 // Desktop screen
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   @include section(200px, 200px, var(--grey-bg-cl));
+  height: auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/Img_dd-@1x_result.webp);
@@ -56,10 +57,10 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
 }
 
 .main__container {
-    width: 360px;
+    width: 400px;
 
     @media screen and (min-width: 1200px) {
-    width: 696px;
+    width: 700px;
     }
 }
 .btn {

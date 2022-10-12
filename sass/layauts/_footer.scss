@@ -20,9 +20,11 @@
     color: var(--accent-txt-cl);
 }
 .footer__content {
+    margin: 0;
     text-transform: uppercase;
     @include font(var(--main-font), 14px, 700, calc(16/14), 0.03em, var(--light-txt-cl));
     margin-bottom: 20px;
+    justify-content: baseline;
 
 
     @media screen and (min-width: 1200px) {
@@ -82,7 +84,6 @@ text-align: center;
     // desktop styles
 @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 70px;
     justify-content: flex-start;
     align-items:  baseline;
     } 
@@ -117,9 +118,3 @@ text-align: center;
 margin-top: 0;
     }
 }
-// .footer__adress {
-//     @media screen and (min-width:1200px) {
-//     display: flex;
-//     justify-content: flex-start;}
-
-// }

@@ -9,18 +9,18 @@
 .client__list {
     justify-content: center;
     @include list(flex, 30px, row, wrap);
-    width: 450px;
+    // width: 450px;
 
    
     @media screen and (min-width: 768px) {
     @include list(null, 30px, row, wrap);
-    width: 738px;
+    // width: 738px;
     }
 
     // desktop styles
     @media screen and (min-width: 1200px) {
     @include list(null, 30px, null, nowrap);
-    width: 1170px;
+    // width: 1170px;
     }
 }
   
@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
   
-    width: 210px;
+    // width: 210px;
     height: 92px;
   
     color: var(--social-icons-cl);
@@ -45,11 +45,25 @@
 
 
     @media screen and (min-width: 768px) {
-    width: 226px;
+    // width: 226px;
     }
             
     // desktop styles
     @media screen and (min-width: 1200px) {
-    width: 170px;
+    // width: 170px;
     }         
 }
+
+
+.client__item {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px*2) / 3);
+    }
+
+}
+
+
+    

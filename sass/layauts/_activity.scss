@@ -1,5 +1,5 @@
 .activity__section {
-  @media (max-width: 767.9px) {
+  @media (max-width: 1200px) {
     display: none;
     
   }
@@ -10,11 +10,12 @@
 .title {
   text-align: center;
   @include font(null, 28px, 700, alc(33/28), 0.03em, var(--main-txt-cl));
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   // desktop styles
   @media screen and (min-width: 1200px) {
   @include font(null, 36px, 700, alc(42/36), 0.03em, var(--main-txt-cl));
+  margin-bottom: 50px;
     }
 }
 
